@@ -107,7 +107,7 @@
 
 <div class="content" id="discord">
     <h2>Discord</h2>
-    <p>Join our Discord server for support and discussions https://discord.gg/ED9vNvwD8u.</p>
+    <p>Join our Discord server for support and discussions <a href="https://discord.gg/ED9vNvwD8u">https://discord.gg/ED9vNvwD8u</a>.</p>
 </div>
 
 <script>
