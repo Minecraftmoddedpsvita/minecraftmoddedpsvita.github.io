@@ -18,6 +18,8 @@
             color: white;
             padding: 20px;
             text-align: center;
+            border-bottom: 4px solid #555;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .nav {
@@ -32,11 +34,13 @@
             color: white;
             text-decoration: none;
             padding: 14px 20px;
-            font-size: 17px;
+            font-size: 20px;
             margin: 0 10px;
             position: relative;
             transition: background 0.3s, color 0.3s;
             z-index: 1;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
 
         .nav a:before {
@@ -71,7 +75,7 @@
         }
 
         .content {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
             display: none;
         }
@@ -95,18 +99,24 @@
 
         .discord-link {
             color: #007bff;
-            text-decoration: underline;
+            text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .discord-link:hover {
+            color: #0056b3;
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 36px;
             margin-bottom: 20px;
             color: #333;
+            font-weight: bold;
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1.6;
             color: #555;
         }
