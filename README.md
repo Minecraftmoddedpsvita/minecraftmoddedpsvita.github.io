@@ -141,7 +141,7 @@
             content[i].classList.remove('active');
         }
         document.getElementById(tabName).classList.add('active');
-        window.scrollTo(0, 0); // Fait défiler la page vers le haut lors du changement d'onglet
+        document.getElementById(tabName).scrollIntoView({ behavior: 'smooth' }); // Fait défiler la page vers le haut lors du changement d'onglet
     }
 </script>
 
