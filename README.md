@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
             color: #333;
         }
 
@@ -40,6 +40,10 @@
         .nav a:hover {
             background-color: #444;
             color: #fff;
+            background: linear-gradient(to bottom, #000000 0%, #2c3e50 100%);
+            color: transparent;
+            background-size: 100% 200%;
+            transition: background-position 0.5s;
         }
 
         .content {
@@ -63,6 +67,12 @@
 
         .gradient-hover:hover {
             background-position: 100% 0;
+        }
+
+        .discord-link {
+            color: #007bff;
+            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -97,7 +107,7 @@
 
 <div class="content" id="discord">
     <h2>Discord</h2>
-    <p>Join Discord if you want to be helped for any questions or issues and for more information.</p>
+    <p>Join Discord if you want to be helped for any questions or issues and for more information. <a href="https://discord.gg/ED9vNvwD8u" class="discord-link">https://discord.gg/ED9vNvwD8u</a></p>
 </div>
 
 <div class="content" id="credit">
