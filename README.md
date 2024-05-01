@@ -124,7 +124,9 @@
 
 <div class="content download" id="download">
     <h2>Download</h2>
-    <p>Download Minecraft Modded for PSVita here.</p>
+    <p>Download Minecraft Modded for PSVita here.<br>
+    <strong>1.20 Minecraft Modded</strong><br>
+    <strong>PVP Minecraft: Modded</strong></p>
 </div>
 
 <div class="content" id="discord">
