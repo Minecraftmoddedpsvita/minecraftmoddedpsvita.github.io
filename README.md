@@ -34,16 +34,39 @@
             font-size: 17px;
             margin: 0 10px;
             position: relative;
-            transition: color 0.3s, background-color 0.3s;
+            transition: background 0.3s, color 0.3s;
+            z-index: 1;
+        }
+
+        .nav a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, #000000 0%, #2c3e50 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .nav a:hover:before {
+            opacity: 1;
         }
 
         .nav a:hover {
-            background-color: #444;
-            color: #fff;
-            background: linear-gradient(to bottom, #000000 0%, #2c3e50 100%);
             color: transparent;
-            background-size: 100% 200%;
-            transition: background-position 0.5s;
+        }
+
+        .nav a:hover::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white;
         }
 
         .content {
@@ -83,11 +106,11 @@
 </div>
 
 <div class="nav">
-    <a href="#" class="gradient-hover" onclick="showTab('home')">Home</a>
-    <a href="#" class="gradient-hover" onclick="showTab('updates')">Updates / News</a>
-    <a href="#" class="gradient-hover" onclick="showTab('download')">Download</a>
-    <a href="#" class="gradient-hover" onclick="showTab('discord')">Discord</a>
-    <a href="#" class="gradient-hover" onclick="showTab('credit')">Credit</a>
+    <a href="#" class="gradient-hover" data-text="Home" onclick="showTab('home')">Home</a>
+    <a href="#" class="gradient-hover" data-text="Updates / News" onclick="showTab('updates')">Updates / News</a>
+    <a href="#" class="gradient-hover" data-text="Download" onclick="showTab('download')">Download</a>
+    <a href="#" class="gradient-hover" data-text="Discord" onclick="showTab('discord')">Discord</a>
+    <a href="#" class="gradient-hover" data-text="Credit" onclick="showTab('credit')">Credit</a>
 </div>
 
 <div class="content active" id="home">
