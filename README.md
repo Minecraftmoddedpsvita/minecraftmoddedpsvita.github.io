@@ -45,6 +45,11 @@
         .content {
             padding: 20px;
             text-align: center;
+            display: none;
+        }
+
+        .content.active {
+            display: block;
         }
 
         .gradient-hover {
@@ -68,37 +73,48 @@
 </div>
 
 <div class="nav">
-    <a href="#" class="gradient-hover">Home</a>
-    <a href="#" class="gradient-hover">Updates / News</a>
-    <a href="#" class="gradient-hover">Download</a>
-    <a href="#" class="gradient-hover">Discord</a>
-    <a href="#" class="gradient-hover">Credit</a>
+    <a href="#" class="gradient-hover" onclick="showTab('home')">Home</a>
+    <a href="#" class="gradient-hover" onclick="showTab('updates')">Updates / News</a>
+    <a href="#" class="gradient-hover" onclick="showTab('download')">Download</a>
+    <a href="#" class="gradient-hover" onclick="showTab('discord')">Discord</a>
+    <a href="#" class="gradient-hover" onclick="showTab('credit')">Credit</a>
 </div>
 
-<div class="content">
+<div class="content active" id="home">
     <h2>Home</h2>
     <p>Minecraft: Modded is currently in development...</p>
 </div>
 
-<div class="content" style="display:none;">
+<div class="content" id="updates">
     <h2>Updates / News</h2>
     <p>2 new versions for Minecraft: Modded. Please check the Download tab.</p>
 </div>
 
-<div class="content" style="display:none;">
+<div class="content" id="download">
     <h2>Download</h2>
     <p>Minecraft: Modded is currently in development. Join Discord for more information.</p>
 </div>
 
-<div class="content" style="display:none;">
+<div class="content" id="discord">
     <h2>Discord</h2>
     <p>Join Discord if you want to be helped for any questions or issues and for more information.</p>
 </div>
 
-<div class="content" style="display:none;">
+<div class="content" id="credit">
     <h2>Credit</h2>
     <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Skins made with the help of Aquamarine.</p>
 </div>
+
+<script>
+    function showTab(tabName) {
+        var i, tabContent, tabLinks;
+        tabContent = document.getElementsByClassName("content");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].classList.remove('active');
+        }
+        document.getElementById(tabName).classList.add('active');
+    }
+</script>
 
 </body>
 </html>
