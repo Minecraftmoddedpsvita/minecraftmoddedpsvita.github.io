@@ -98,7 +98,7 @@
 
 <div class="content" id="home">
     <h2>Welcome to Minecraft Modded for PSVita</h2>
-    <p>This is the homepage content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>This is the homepage content.</p>
 </div>
 
 <div class="content" id="menu">
