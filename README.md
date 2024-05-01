@@ -64,6 +64,7 @@
             text-align: center;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
+            position: relative; /* Ajout de cette ligne */
         }
 
         .content.active {
@@ -127,7 +128,7 @@
 </div>
 
 <div class="content" id="discord">
-    <h2 style="font-size: 24px;">Join Official Minecraft: Modded Discord Server</h2>
+    <h2 style="font-size: 24px; margin-top: 0;">Join Official Minecraft: Modded Discord Server</h2>
     <p style="font-size: 18px;">Be aware of every news, get help with any issues or questions you have.<br>
     <a href="https://discord.gg/ED9vNvwD8u" style="font-size: 18px; color: #007bff; text-decoration: underline;">https://discord.gg/ED9vNvwD8u</a></p>
 </div>
