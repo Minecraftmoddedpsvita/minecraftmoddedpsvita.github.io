@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft Modded for PSVita</title>
+    <title>Minecraft: Modded for PSVita</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,114 +38,67 @@
         }
 
         .nav a:hover {
-            background-color: #000;
+            background-color: #444;
             color: #fff;
-        }
-
-        .nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background-color: #fff;
-            transition: width 0.3s ease, left 0.3s ease;
-        }
-
-        .nav a:hover::after,
-        .nav a.active::after {
-            width: 100%;
-            left: 0;
         }
 
         .content {
             padding: 20px;
             text-align: center;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
+        }
+
+        .gradient-hover {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: background-position 0.5s;
             position: relative;
         }
 
-        .content.active {
-            opacity: 1;
-        }
-
-        .download {
-            display: none;
-        }
-
-        .download.show {
-            display: block;
-            animation: fadeIn 0.5s;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        .gradient-hover:hover {
+            background-position: 100% 0;
         }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <h1>Minecraft Modded for PSVita</h1>
+    <h1>Minecraft: Modded for PSVita</h1>
 </div>
 
 <div class="nav">
-    <a href="#" class="active" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('menu')">Menu</a>
-    <a href="#" onclick="showTab('download')">Download</a>
-    <a href="#" onclick="showTab('discord')">Discord</a>
+    <a href="#" class="gradient-hover">Home</a>
+    <a href="#" class="gradient-hover">Updates / News</a>
+    <a href="#" class="gradient-hover">Download</a>
+    <a href="#" class="gradient-hover">Discord</a>
+    <a href="#" class="gradient-hover">Credit</a>
 </div>
 
-<div class="content active" id="home">
-    <h2>Welcome to Minecraft Modded for PSVita</h2>
-    <p>This is the homepage content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="content">
+    <h2>Home</h2>
+    <p>Minecraft: Modded is currently in development...</p>
 </div>
 
-<div class="content" id="menu">
-    <h2>Menu</h2>
-    <p><strong>What's new?</strong><br>
-    - Custom Mini-games Lobby made by Mickael140810<br>
-    - Custom 1.20 textures packs + shaders made by Mickael140810<br>
-    - New custom skins<br>
-    - Custom worlds with NBTs and Hypixel Bedwars<br>
-    - New App design<br>
-    - Larger worlds and max players are in the list but not sure of doing it<br>
-    - Custom HUD Menu<br>
-    - And More ...<br><br>
-    Join Discord for newest information.</p>
+<div class="content" style="display:none;">
+    <h2>Updates / News</h2>
+    <p>2 new versions for Minecraft: Modded. Please check the Download tab.</p>
 </div>
 
-<div class="content download" id="download">
+<div class="content" style="display:none;">
     <h2>Download</h2>
-    <p>Download Minecraft Modded for PSVita here.<br>
-    <strong>1.20 Minecraft Modded</strong><br>
-    <strong>PVP Minecraft: Modded</strong></p>
+    <p>Minecraft: Modded is currently in development. Join Discord for more information.</p>
 </div>
 
-<div class="content" id="discord">
-    <h2 style="font-size: 24px;">Join Official Minecraft: Modded Discord Server</h2>
-    <p style="font-size: 18px;">Be aware of every news, get help with any issues or questions you have.<br>
-    <a href="https://discord.gg/ED9vNvwD8u" style="font-size: 18px; color: #007bff; text-decoration: underline;">https://discord.gg/ED9vNvwD8u</a></p>
+<div class="content" style="display:none;">
+    <h2>Discord</h2>
+    <p>Join Discord if you want to be helped for any questions or issues and for more information.</p>
 </div>
 
-<script>
-    function showTab(tabName) {
-        var i;
-        var content = document.getElementsByClassName("content");
-        for (i = 0; i < content.length; i++) {
-            content[i].classList.remove('active');
-        }
-        document.getElementById(tabName).classList.add('active');
-        document.getElementById(tabName).scrollIntoView({ behavior: 'smooth' }); // Fait défiler la page vers le haut lors du changement d'onglet
-    }
-</script>
+<div class="content" style="display:none;">
+    <h2>Credit</h2>
+    <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Skins made with the help of Aquamarine.</p>
+</div>
 
 </body>
 </html>
