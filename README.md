@@ -143,7 +143,17 @@
 
 <div class="content" id="updates">
     <h2>Updates / News</h2>
-    <p>2 new versions for Minecraft: Modded. Please check the Download tab.</p>
+    <p>- Minecraft: Modded can play with normal Minecraft PSVita<br>
+    - 1.20 Textures + Shaders + PVP Textures + FPS BOOST<br>
+    - Custom Lobby By Mickael140810 (Chests with command blocks, all heads, all disks, elytras, tnts jumps etc etc ...)<br>
+    - Custom worlds with hacked items such as Command blocks, God Stick, Creative kill potions, and even a working Hypixel Bedwars<br>
+    - New Logo<br>
+    - New App Design<br>
+    - New Skins<br>
+    - Two versions of Minecraft: Modded available: <br>
+    - PVP + SHADERS + FPS BOOST<br>
+    - Full Java 1.20 + Shaders<br>
+    And more soon . . .</p>
 </div>
 
 <div class="content" id="download">
