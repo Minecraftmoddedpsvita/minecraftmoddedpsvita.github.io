@@ -62,6 +62,12 @@
         .content {
             padding: 20px;
             text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .content.active {
+            opacity: 1;
         }
 
         .download {
@@ -96,9 +102,9 @@
     <a href="#" onclick="showTab('discord')">Discord</a>
 </div>
 
-<div class="content" id="home">
+<div class="content active" id="home">
     <h2>Welcome to Minecraft Modded for PSVita</h2>
-    <p>This is the homepage content.</p>
+    <p>This is the homepage content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 
 <div class="content" id="menu">
@@ -131,9 +137,9 @@
         var i;
         var content = document.getElementsByClassName("content");
         for (i = 0; i < content.length; i++) {
-            content[i].style.display = "none";
+            content[i].classList.remove('active');
         }
-        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).classList.add('active');
     }
 </script>
 
