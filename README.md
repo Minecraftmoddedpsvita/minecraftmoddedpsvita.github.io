@@ -6,10 +6,10 @@
     <title>Minecraft: Modded for PSVita</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #ecf0f1, #f9f9f9);
+            background: linear-gradient(to bottom, #f3f4f6, #e1e5ea);
             color: #333;
         }
 
@@ -25,6 +25,7 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
+            border-bottom: 2px solid #444;
         }
 
         .nav a {
@@ -96,6 +97,18 @@
             color: #007bff;
             text-decoration: underline;
             font-weight: bold;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
         }
     </style>
 </head>
