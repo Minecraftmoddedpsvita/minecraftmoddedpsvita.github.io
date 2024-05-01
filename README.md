@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+            background: linear-gradient(to bottom, #ecf0f1, #f9f9f9);
             color: #333;
         }
 
@@ -45,7 +45,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, #000000 0%, #2c3e50 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s;
