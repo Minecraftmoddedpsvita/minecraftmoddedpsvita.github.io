@@ -64,7 +64,7 @@
             text-align: center;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
-            position: relative; /* Ajout de cette ligne */
+            position: relative;
         }
 
         .content.active {
@@ -98,39 +98,14 @@
 
 <div class="nav">
     <a href="#" class="active" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('menu')">Menu</a>
-    <a href="#" onclick="showTab('download')">Download</a>
-    <a href="#" onclick="showTab('discord')">Discord</a>
+    <a href="menu.html" target="_blank">Menu</a>
+    <a href="download.html" target="_blank">Download</a>
+    <a href="discord.html" target="_blank">Discord</a>
 </div>
 
 <div class="content active" id="home">
     <h2>Welcome to Minecraft Modded for PSVita</h2>
     <p>This is the homepage content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
-
-<div class="content" id="menu">
-    <h2>Menu</h2>
-    <p><strong>What's new?</strong><br>
-    - Custom Mini-games Lobby made by Mickael140810<br>
-    - Custom 1.20 textures packs + shaders made by Mickael140810<br>
-    - New custom skins<br>
-    - Custom worlds with NBTs and Hypixel Bedwars<br>
-    - New App design<br>
-    - Larger worlds and max players are in the list but not sure of doing it<br>
-    - Custom HUD Menu<br>
-    - And More ...<br><br>
-    Join Discord for newest information.</p>
-</div>
-
-<div class="content download" id="download">
-    <h2>Download</h2>
-    <p>Download Minecraft Modded for PSVita here.</p>
-</div>
-
-<div class="content" id="discord">
-    <h2 style="font-size: 24px; margin-top: 0;">Join Official Minecraft: Modded Discord Server</h2>
-    <p style="font-size: 18px;">Be aware of every news, get help with any issues or questions you have.<br>
-    <a href="https://discord.gg/ED9vNvwD8u" style="font-size: 18px; color: #007bff; text-decoration: underline;">https://discord.gg/ED9vNvwD8u</a></p>
 </div>
 
 <script>
