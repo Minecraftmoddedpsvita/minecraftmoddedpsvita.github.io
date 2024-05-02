@@ -78,10 +78,13 @@
             padding: 40px;
             text-align: center;
             display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
 
         .content.active {
             display: block;
+            opacity: 1;
         }
 
         .gradient-hover {
