@@ -108,6 +108,12 @@
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            animation: fadeInContent 0.5s;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .content.active {
@@ -160,29 +166,13 @@
             border: none;
             border-radius: 5px;
             font-size: 18px;
-            cursor: pointer;
+            text-decoration: none;
             transition: background-color 0.3s;
+            margin-top: 20px;
         }
 
         .btn:hover {
             background-color: #0056b3;
-        }
-
-        .btn:active {
-            transform: translateY(2px);
-        }
-
-        @media screen and (max-width: 768px) {
-            .nav a {
-                font-size: 16px;
-                padding: 10px 15px;
-            }
-            h2 {
-                font-size: 24px;
-            }
-            p {
-                font-size: 16px;
-            }
         }
     </style>
 </head>
