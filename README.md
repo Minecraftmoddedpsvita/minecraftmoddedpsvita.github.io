@@ -11,6 +11,7 @@
             padding: 0;
             background: linear-gradient(to bottom, #f3f4f6, #e1e5ea);
             color: #333;
+            overflow-x: hidden;
         }
 
         .header {
@@ -41,6 +42,7 @@
             z-index: 1;
             font-weight: bold;
             letter-spacing: 1px;
+            border-radius: 5px;
         }
 
         .nav a:before {
@@ -54,6 +56,7 @@
             z-index: -1;
             opacity: 0;
             transition: opacity 0.3s;
+            border-radius: 5px;
         }
 
         .nav a:hover:before {
@@ -80,6 +83,10 @@
             display: none;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         .content.active {
