@@ -138,7 +138,7 @@
 
 <div class="content active" id="home">
     <h2>Home</h2>
-    <p>Welcome to Minecraft: Modded for PSVita. Minecraft: Modded is a modded version of Minecraft PSVita. Minecraft: Modded will allow you to play with normal Minecraft PSVita players. Minecraft: Modded has a lot of characteristics such as custom worlds (like working Hypixel Bedwars), custom textures packs, custom lobby, and much much more. Please check "Updates / News" for all the details. Don't forget to join our Discord for news, updates, important announcements, if you have any issues or problems or even suggestions. Thank you.</p>
+    <p>Welcome to Minecraft: Modded for PSVita. Minecraft: Modded is a modded version of Minecraft PSVita that allows you to play with normal Minecraft PSVita players. Minecraft: Modded offers various features such as custom worlds, custom textures packs, custom lobby, and much more. Please check "Updates / News" for all the details. Don't forget to join our Discord for news, updates, important announcements, and support. Thank you.</p>
 </div>
 
 <div class="content" id="updates">
