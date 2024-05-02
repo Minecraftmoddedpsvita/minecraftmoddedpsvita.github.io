@@ -12,6 +12,12 @@
             background: linear-gradient(to bottom, #f3f4f6, #e1e5ea);
             color: #333;
             overflow-x: hidden;
+            animation: gradientAnimation 10s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(to bottom, #f3f4f6, #e1e5ea); }
+            100% { background: linear-gradient(to bottom, #e1e5ea, #f3f4f6); }
         }
 
         .header {
@@ -21,6 +27,12 @@
             text-align: center;
             border-bottom: 4px solid #555;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .nav {
@@ -32,6 +44,12 @@
             border-radius: 10px;
             margin: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .nav a {
@@ -133,6 +151,39 @@
             line-height: 1.6;
             color: #555;
         }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav a {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -150,33 +201,32 @@
 </div>
 
 <div class="content active" id="home">
-    <h2>Home</h2>
-    <p>Welcome to Minecraft: Modded for PSVita. Minecraft: Modded is a modded version of Minecraft PSVita that allows you to play with normal Minecraft PSVita players. Minecraft: Modded offers various features such as custom worlds, custom textures packs, custom lobby, and much more. Please check "Updates / News" for all the details. Don't forget to join our Discord for news, updates, important announcements, and support. Thank you.</p>
+    <h2>Welcome to Minecraft: Modded for PSVita</h2>
+    <p>Minecraft: Modded is a modded version of Minecraft PSVita that brings exciting new features and enhancements. Join our community and experience Minecraft like never before!</p>
+    <a href="#" class="btn gradient-hover" onclick="showTab('download')">Download Now</a>
 </div>
 
 <div class="content" id="updates">
     <h2>Updates / News</h2>
-    <p>- Minecraft: Modded can play with normal Minecraft PSVita<br>
-    - 1.20 Textures + Shaders + PVP Textures + FPS BOOST<br>
-    - Custom Lobby By Mickael140810 (Chests with command blocks, all heads, all disks, elytras, tnts jumps etc etc ...)<br>
-    - Custom worlds with hacked items such as Command blocks, God Stick, Creative kill potions, and even a working Hypixel Bedwars<br>
-    - New Logo<br>
-    - New App Design<br>
-    - New Skins<br>
-    - Two versions of Minecraft: Modded available: <br>
-    - PVP + SHADERS + FPS BOOST<br>
-    - Full Java 1.20 + Shaders<br>
-    And more soon . . .</p>
+    <p>- Minecraft: Modded can now play with normal Minecraft PSVita.</p>
+    <p>- Includes 1.20 Textures + Shaders + PVP Textures + FPS BOOST.</p>
+    <p>- Custom Lobby By Mickael140810 (Chests with command blocks, all heads, all disks, elytras, tnts jumps etc etc ...).</p>
+    <p>- Custom worlds with hacked items such as Command blocks, God Stick, Creative kill potions, and even a working Hypixel Bedwars.</p>
+    <p>- New Logo, App Design, and Skins.</p>
+    <p>- Two versions of Minecraft: Modded available: PVP + SHADERS + FPS BOOST and Full Java 1.20 + Shaders.</p>
+    <p>- And more updates coming soon...</p>
 </div>
 
 <div class="content" id="download">
     <h2>Download</h2>
-    <p>Minecraft: Modded is currently in development. Join Discord for more information.</p>
+    <p>Minecraft: Modded is currently in development. Join our Discord server for more information and updates.</p>
+    <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
 </div>
 
 <div class="content" id="discord">
     <h2>Discord</h2>
-    <p>Join Discord if you want to be helped for any questions or issues and for more information. <a href="https://discord.gg/ED9vNvwD8u" class="discord-link">https://discord.gg/ED9vNvwD8u</a></p>
+    <p>Join our Discord server to connect with the community, get help, and stay updated with the latest news and announcements.</p>
+    <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
 </div>
 
 <div class="content" id="credit">
