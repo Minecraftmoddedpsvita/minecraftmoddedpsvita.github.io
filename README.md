@@ -232,7 +232,7 @@
         // Faire défiler jusqu'au contenu de l'onglet sur mobile
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             var yOffset = document.getElementById(tabName).offsetTop;
-            window.scrollTo(0, yOffset);
+            document.getElementById(tabName).scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
