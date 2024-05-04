@@ -43,6 +43,13 @@
             margin-bottom: 20px;
         }
 
+        .mobile .nav a {
+            display: block;
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+
         .mobile .content {
             display: block;
             width: 80%;
