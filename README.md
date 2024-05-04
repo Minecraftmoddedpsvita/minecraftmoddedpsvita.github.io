@@ -4,169 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft: Modded for PSVita</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #f3f4f6, #e1e5ea);
-            color: #333;
-            overflow-x: hidden;
-            animation: gradientAnimation 10s infinite alternate;
-        }
-
-        @keyframes gradientAnimation {
-            0% { background: linear-gradient(to bottom, #f3f4f6, #e1e5ea); }
-            100% { background: linear-gradient(to bottom, #e1e5ea, #f3f4f6); }
-        }
-
-        .desktop .nav {
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-        }
-
-        .desktop .content {
-            display: inline-block;
-            width: calc(20% - 40px);
-            margin: 20px;
-            vertical-align: top;
-        }
-
-        .mobile .nav {
-            display: block;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .mobile .nav a {
-            display: block;
-            padding: 10px;
-            margin: 5px auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(#7ACFF7, #4DA8D9);
-        }
-
-        .mobile .content {
-            display: none;
-            width: 80%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-
-        .nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            font-size: 18px;
-            margin: 0 10px;
-            position: relative;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .nav a:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.3s;
-            border-radius: 5px;
-        }
-
-        .nav a:hover:before {
-            opacity: 1;
-        }
-
-        .nav a:hover {
-            color: transparent;
-        }
-
-        .nav a:hover::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            color: white;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .content.active {
-            opacity: 1;
-        }
-
-        .gradient-hover {
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            transition: background-position 0.5s;
-            position: relative;
-        }
-
-        .gradient-hover:hover {
-            background-position: 100% 0;
-        }
-
-        .discord-link {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .discord-link:hover {
-            color: #0056b3;
-        }
-
-        h2 {
-            font-size: 26px;
-            margin-bottom: 20px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            padding: 10px 20px;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
-<body class="desktop">
+<body>
 <div class="header">
     <h1>Minecraft: Modded for PSVita</h1>
 </div>
@@ -175,9 +14,7 @@
     <a href="#" class="gradient-hover" data-text="Home" onclick="showTab('home')">Home</a>
     <a href="#" class="gradient-hover" data-text="Updates / News" onclick="showTab('updates')">Updates / News</a>
     <a href="#" class="gradient-hover" data-text="Download" onclick="showTab('download')">Download</a>
-    <a href
-
-="#" class="gradient-hover" data-text="Discord" onclick="showTab('discord')">Discord</a>
+    <a href="#" class="gradient-hover" data-text="Discord" onclick="showTab('discord')">Discord</a>
     <a href="#" class="gradient-hover" data-text="Credit" onclick="showTab('credit')">Credit</a>
 </div>
 
@@ -224,25 +61,7 @@
         }
         document.getElementById(tabName).classList.add('active');
     }
-
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.body.classList.remove("desktop");
-        document.body.classList.add("mobile");
-        var navLinks = document.querySelectorAll('.nav a');
-        for (var i = 0; i < navLinks.length; i++) {
-            navLinks[i].addEventListener('click', function() {
-                var contentId = this.getAttribute('data-target');
-                var content = document.getElementById(contentId);
-                if (content.style.display === "none") {
-                    content.style.display = "block";
-                } else {
-                    content.style.display = "none";
-                }
-            });
-        }
-    }
 </script>
 
 </body>
 </html>
-```
