@@ -56,7 +56,7 @@
             color: white;
             text-decoration: none;
             padding: 14px 20px;
-            font-size: 20px;
+            font-size: 18px;
             margin: 0 10px;
             position: relative;
             transition: background 0.3s, color 0.3s;
@@ -99,7 +99,7 @@
         }
 
         .content {
-            padding: 40px;
+            padding: 20px;
             text-align: center;
             display: none;
             opacity: 0;
@@ -146,28 +146,28 @@
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 26px;
             margin-bottom: 20px;
             color: #333;
             font-weight: bold;
         }
 
         p {
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.6;
             color: #555;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
-            font-size: 18px;
+            font-size: 16px;
             text-decoration: none;
             transition: background-color 0.3s;
+            padding: 10px 20px;
             margin-top: 20px;
         }
 
