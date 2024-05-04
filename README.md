@@ -228,6 +228,12 @@
             tabContent[i].classList.remove('active');
         }
         document.getElementById(tabName).classList.add('active');
+
+        // Faire défiler jusqu'au contenu de l'onglet sur mobile
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            var yOffset = document.getElementById(tabName).offsetTop;
+            window.scrollTo(0, yOffset);
+        }
     }
 
     // Détecter le type d'appareil et changer le comportement en conséquence
