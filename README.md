@@ -234,6 +234,18 @@
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         document.body.classList.remove("desktop");
         document.body.classList.add("mobile");
+        var navLinks = document.querySelectorAll('.nav a');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener('click', function() {
+                var contentId = this.getAttribute('data-target');
+                var content = document.getElementById(contentId);
+                if (content.style.display === "none") {
+                    content.style.display = "block";
+                } else {
+                    content.style.display = "none";
+                }
+            });
+        }
     }
 </script>
 
