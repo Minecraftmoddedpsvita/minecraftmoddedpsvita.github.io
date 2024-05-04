@@ -53,7 +53,7 @@
         }
 
         .mobile .content {
-            display: block;
+            display: none; /* Masquer tous les contenus par défaut sur mobile */
             width: 80%;
             margin: 0 auto;
             margin-bottom: 20px;
@@ -228,12 +228,6 @@
             tabContent[i].classList.remove('active');
         }
         document.getElementById(tabName).classList.add('active');
-
-        // Faire défiler jusqu'au contenu de l'onglet sur mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            var yOffset = document.getElementById(tabName).offsetTop;
-            document.getElementById(tabName).scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
     }
 
     // Détecter le type d'appareil et changer le comportement en conséquence
