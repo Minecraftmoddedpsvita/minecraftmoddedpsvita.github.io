@@ -49,6 +49,7 @@
             margin: 5px auto;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
+            background: linear-gradient(#7ACFF7, #4DA8D9); /* Dégradé bleu clair */
         }
 
         .mobile .content {
@@ -67,10 +68,6 @@
             margin: 0 10px;
             position: relative;
             transition: background 0.3s, color 0.3s;
-            z-index: 1;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border-radius: 5px;
         }
 
         .nav a:before {
