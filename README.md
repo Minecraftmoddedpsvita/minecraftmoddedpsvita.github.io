@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft: Modded for PSVita</title>
     <style>
-        /* Styles communs pour toutes les tailles d'écran */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -16,58 +15,55 @@
             animation: gradientAnimation 10s infinite alternate;
         }
 
-        /* Animation du fond */
         @keyframes gradientAnimation {
             0% { background: linear-gradient(to bottom, #f3f4f6, #e1e5ea); }
             100% { background: linear-gradient(to bottom, #e1e5ea, #f3f4f6); }
         }
 
-        /* Styles pour les écrans larges (PC) */
-        .desktop .nav {
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #555;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .nav {
+            background-color: #666;
+            overflow: hidden;
             display: flex;
             justify-content: center;
+            border-bottom: 2px solid #444;
+            border-radius: 10px;
             margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s;
         }
 
-        .desktop .content {
-            display: inline-block;
-            width: calc(20% - 40px);
-            margin: 20px;
-            vertical-align: top;
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Styles pour les appareils mobiles */
-        .mobile .nav {
-            display: block;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .mobile .nav a {
-            display: block;
-            padding: 10px;
-            margin: 5px auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
-            background: linear-gradient(#7ACFF7, #4DA8D9); /* Dégradé bleu clair */
-        }
-
-        .mobile .content {
-            display: block;
-            width: 80%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-
-        /* Styles communs pour les onglets */
         .nav a {
             color: white;
             text-decoration: none;
             padding: 14px 20px;
-            font-size: 18px;
+            font-size: 20px;
             margin: 0 10px;
             position: relative;
             transition: background 0.3s, color 0.3s;
+            z-index: 1;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 5px;
         }
 
         .nav a:before {
@@ -102,22 +98,29 @@
             color: white;
         }
 
-        /* Styles pour le contenu */
         .content {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
+            display: none;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
             border-radius: 10px;
             background-color: #fff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            animation: fadeInContent 0.5s;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .content.active {
+            display: block;
             opacity: 1;
         }
 
-        /* Autres styles */
         .gradient-hover {
             background: linear-gradient(90deg, #ff7e5f, #feb47b);
             background-clip: text;
@@ -143,28 +146,28 @@
         }
 
         h2 {
-            font-size: 26px;
+            font-size: 36px;
             margin-bottom: 20px;
             color: #333;
             font-weight: bold;
         }
 
         p {
-            font-size: 16px;
+            font-size: 20px;
             line-height: 1.6;
             color: #555;
         }
 
         .btn {
             display: inline-block;
+            padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             text-decoration: none;
             transition: background-color 0.3s;
-            padding: 10px 20px;
             margin-top: 20px;
         }
 
@@ -173,7 +176,8 @@
         }
     </style>
 </head>
-<body class="desktop">
+<body>
+
 <div class="header">
     <h1>Minecraft: Modded for PSVita</h1>
 </div>
@@ -228,18 +232,6 @@
             tabContent[i].classList.remove('active');
         }
         document.getElementById(tabName).classList.add('active');
-
-        // Faire défiler jusqu'au contenu de l'onglet sur mobile
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            var yOffset = document.getElementById(tabName).offsetTop;
-            document.getElementById(tabName).scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }
-
-    // Détecter le type d'appareil et changer le comportement en conséquence
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        document.body.classList.remove("desktop");
-        document.body.classList.add("mobile");
     }
 </script>
 
