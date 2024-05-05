@@ -209,7 +209,7 @@
 
 <div class="content" id="download">
     <h2>Download</h2>
-    <p>Minecraft: Modded is currently in development. Join our Discord server for more information and updates.</p>
+    <p>Minecraft: Modded is currently in development. Join our Discord server for more information and updates. <a href="https://discord.gg/pBB4rnavkD" class="discord-link" target="_blank">https://discord.gg/pBB4rnavkD</a></p>
     <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
 </div>
 
