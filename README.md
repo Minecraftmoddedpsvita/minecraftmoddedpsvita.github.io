@@ -270,6 +270,12 @@
             <p>Yes, of course! Just install Minecraft: Enhanced USA or JPN Edition, and keep Minecraft: Modded to Europe edition (PSCB00560).</p>
         </div>
     </div>
+    <div class="faq-item" onclick="toggleFaqAnswer('faq2')">
+        <h3>Can I have normal Minecraft and Minecraft: Modded V1 ?</h3>
+        <div class="faq-answer" id="faq2">
+            <p>Yes, of course! Just make sure your normal Minecraft is JAPAN or USA edition, and keep Minecraft: Modded V1 Europe edition (PCSB00560).</p>
+        </div>
+    </div>
 </div>
 
 <script>
