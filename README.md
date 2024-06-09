@@ -235,7 +235,7 @@
 </div>
 
 <div class="content" id="download">
-    <h2>Download</h2>
+    <h2>MINECRAFT: MODDED V1 IS NOT RELEASED YET, THOSES INSTRUCTIONS ARE FOR THE FUTURE !!!</h2>
     <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
     <h2>Minecraft: Modded V1 RELEASE</h2>
     <p>Tutorial how to install Minecraft: Modded V1.</p>
