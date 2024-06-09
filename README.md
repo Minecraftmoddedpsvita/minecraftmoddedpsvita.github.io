@@ -174,6 +174,32 @@
         .btn:hover {
             background-color: #0056b3;
         }
+
+        .faq-item {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .faq-item h3 {
+            font-size: 24px;
+            margin: 0;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        .faq-item:hover h3 {
+            color: #0056b3;
+        }
+
+        .faq-answer {
+            display: none;
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+            padding-left: 20px;
+            border-left: 3px solid #007bff;
+        }
+
     </style>
 </head>
 <body>
@@ -188,6 +214,7 @@
     <a href="#" class="gradient-hover" data-text="Download" onclick="showTab('download')">Download</a>
     <a href="#" class="gradient-hover" data-text="Discord" onclick="showTab('discord')">Discord</a>
     <a href="#" class="gradient-hover" data-text="Credit" onclick="showTab('credit')">Credit</a>
+    <a href="#" class="gradient-hover" data-text="FAQ" onclick="showTab('faq')">FAQ</a>
 </div>
 
 <div class="content active" id="home">
@@ -235,15 +262,34 @@
     <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Special Thanks to: SkyForces, PhoenixArc, Matt19220, Zealous Chuck, Haasman, Lee</p>
 </div>
 
+<div class="content" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item" onclick="toggleFaqAnswer('faq1')">
+        <h3>Can I have Minecraft: Enhanced and Minecraft: Modded at the same time?</h3>
+        <div class="faq-answer" id="faq1">
+            <p>Yes, of course! Just install Minecraft: Enhanced USA or JPN Edition, and keep Minecraft: Modded to Europe edition (PSCB00560).</p>
+        </div>
+    </div>
+</div>
+
 <script>
     function showTab(tabName) {
-        var i, tabContent, tabLinks;
+        var i, tabContent;
         tabContent = document.getElementsByClassName("content");
         for (i = 0; i < tabContent.length; i++) {
             tabContent[i].classList.remove('active');
         }
         document.getElementById(tabName).classList.add('active');
         window.scrollTo(0, 0); // scroll to top when tab changes
+    }
+
+    function toggleFaqAnswer(faqId) {
+        var answer = document.getElementById(faqId);
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
     }
 </script>
 
