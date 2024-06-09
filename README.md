@@ -209,7 +209,6 @@
 
 <div class="content" id="download">
     <h2>Download</h2>
-    <p>Minecraft: Modded is currently in development. Join our Discord server for more information and updates. <a href="https://discord.gg/pBB4rnavkD" class="discord-link" target="_blank">https://discord.gg/pBB4rnavkD</a></p>
     <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
     <h2>Minecraft: Modded V1 RELEASE</h2>
     <p>Tutorial how to install Minecraft: Modded V1.</p>
@@ -234,7 +233,7 @@
 
 <div class="content" id="credit">
     <h2>Credit</h2>
-    <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Skins made with the help of Aquamarine.</p>
+    <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Special Thanks to: SkyForces, PhoenixArc, Matt19220, Zealous Chuck, Haasman</p>
 </div>
 
 <script>
@@ -249,6 +248,5 @@
     }
 </script>
 
-dh=06a96be68bed6a85a4e77dd46b7300fe8bc41045
 </body>
 </html>
