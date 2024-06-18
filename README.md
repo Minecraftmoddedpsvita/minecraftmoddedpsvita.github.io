@@ -248,7 +248,7 @@
     <p><strong>5th step:</strong> Open "Minecraft_Modded_reFiles" folder and slide the "reAddcount" and the "rePatch" folder to ux0.</p>
      <p><strong>6th step:</strong> Open "Minecraft_ModdedV1_Custom_Worlds" copy the "savegames" folder, go to ux0:/data and paste.</p>
     <p><strong>7th step:</strong> Launch Minecraft: Modded V1 for few seconds then close it.</p>
-    <p><strong>8th step:</strong> Launch "Save Manager" app, tap on "Minecraft: Modded V1", tap on ***RESTORE*** then tap on "SLOT9", then press X. (this step will allow you to have the custom worlds.)</p>
+    <p><strong>8th step:</strong> Launch "Save Manager" app, tap on "Minecraft: Modded V1", tap on ***RESTORE*** then tap on "SLOT9", then press X. DO NOT PRESS BACKUP INSTEAD OF RESTORE. (this step will allow you to have the custom worlds.)</p>
     <p><strong>9th step:</strong> Launch Minecraft: Modded V1, and enjoy!</p>
     <p><strong>Download Link:</strong> Minecraft: Modded V1 Install Folder: https://drive.google.com/drive/folders/1e6wnehifA9NnJDBqBnx6ACjc-8IcWs93?usp=drive_link</p>
      <p><strong>Download Link:</strong> Minecraft: Modded V1 reFiles Folder: https://drive.google.com/drive/folders/1emnBebfCACTJRc5RuAGg3r9HmsLEvb_e?usp=drive_link</p>
