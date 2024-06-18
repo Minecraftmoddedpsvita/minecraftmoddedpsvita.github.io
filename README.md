@@ -242,13 +242,14 @@
     <p>
         <strong>1st step:</strong> Check your region code of the Minecraft you're currently using. If it is USA, or Japan, you can install Minecraft: Modded V1 without uninstalling Minecraft. If your Minecraft region code is Europe (PCSB00560), you will have to uninstall your Minecraft because Minecraft: Modded V1 is currently only on Europe. (USA AND JAPAN RELEASE SOON . . .)
     </p>
-    <p><strong>2nd step:</strong> Download the "Minecraft_ModdedV1_Install_Folder" file. And download "Minecraft_Modded_reFiles" from Mediafire.</p>
-    <p><strong>3rd step:</strong> Slide the "Minecraft_ModdedV1_Install_Folder" and "Minecraft_Modded_reFiles" to your PSVita.</p>
+    <p><strong>2nd step:</strong> Download the "Minecraft_ModdedV1_Install_Folder" folder. Download "Minecraft_Modded_reFiles" folder, and download "Minecraft_ModdedV1_Custom_Worlds </p>
+    <p><strong>3rd step:</strong> Slide the "Minecraft_ModdedV1_Install_Folder" , "Minecraft_Modded_reFiles" and "Minecraft_ModdedV1_Custom_Worlds to your PSVita.</p>
     <p><strong>4th step:</strong> Go on "Minecraft_ModdedV1_Install_Folder", press triangle, go to "More" and choose "Install Folder".</p>
     <p><strong>5th step:</strong> Open "Minecraft_Modded_reFiles" folder and slide the "reAddcount" and the "rePatch" folder to ux0.</p>
-    <p><strong>6th step:</strong> Launch Minecraft: Modded V1 for few seconds then close it.</p>
-    <p><strong>7th step:</strong> Launch "Save Manager" app, tap on "Minecraft: Modded V1", tap on ***RESTORE*** then tap on "SLOT9", then press X. (this step will allow you to have the custom worlds.)</p>
-    <p><strong>8th step:</strong> Launch Minecraft: Modded V1, and enjoy!</p>
+     <p><strong>6th step:</strong> Open "Minecraft_ModdedV1_Custom_Worlds" copy the "savegames" folder, go to ux0:/data and paste.</p>
+    <p><strong>7th step:</strong> Launch Minecraft: Modded V1 for few seconds then close it.</p>
+    <p><strong>8th step:</strong> Launch "Save Manager" app, tap on "Minecraft: Modded V1", tap on ***RESTORE*** then tap on "SLOT9", then press X. (this step will allow you to have the custom worlds.)</p>
+    <p><strong>9th step:</strong> Launch Minecraft: Modded V1, and enjoy!</p>
 </div>
 
 <div class="content" id="discord">
