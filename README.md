@@ -225,17 +225,29 @@
 
 <div class="content" id="updates">
     <h2>Updates / News</h2>
-    <p>- Minecraft: Modded can now play with normal Minecraft PSVita.</p>
-    <p>- Includes 1.20 Textures + Shaders + PVP Textures + FPS BOOST.</p>
-    <p>- Custom Lobby By Mickael140810 (Chests with command blocks, all heads, all disks, elytras, tnts jumps etc etc ...).</p>
-    <p>- Custom worlds with hacked items such as Command blocks, God Stick, Creative kill potions, and even a working Hypixel Bedwars.</p>
-    <p>- New Logo, App Design, and Skins.</p>
-    <p>- Two versions of Minecraft: Modded available: PVP + SHADERS + FPS BOOST and Full Java 1.20 + Shaders.</p>
-    <p>- And more updates coming soon...</p>
+    <p><strong>MINECRAFT: MODDED V1 [RELEASE]</strong></p>
+    <p>Here is what new about Modded V1:</p>
+    <ul>
+        <li>Custom Skin Packs (35+)</li>
+        <li>5 New Glide Maps (not made by modded community)</li>
+        <li>New PSN Status changed to "(username Play Minecraft: Modded V1"</li>
+        <li>PC / PS3 Worlds Converted to PSVita Worlds such as skywars, skyblock, bedwars, hunger games etc . . . (fully working)</li>
+        <li>New texture pack</li>
+        <li>Custom name with the color that you want. (create a ticket on the discord to apply.)</li>
+        <li>New UI, New Background</li>
+        <li>Custom Mini-Games Lobby</li>
+        <li>All DLCs unlocked</li>
+        <li>New 1.21 Dog Texture "Woods Wolf".</li>
+        <li>Increased lights</li>
+        <li>New buttons called "Updates & Options" and "Modded Updates" to check what's new when you update</li>
+        <li>PS3/PS4 BUTTON TEXTURES</li>
+        <li>There will be a lot of new updates to fix bugs, to add news things etc . . . Stay tuned on the discord and the website.</li>
+    </ul>
+    <p>All the download links and instructions are in the discord and the website.</p>
 </div>
 
 <div class="content" id="download">
-    <h2>MINECRAFT: MODDED V1 IS NOT RELEASED YET, THOSES INSTRUCTIONS ARE FOR THE FUTURE !!!</h2>
+    <h2>Minecraft: Modded V1 PSVita Released.</h2>
     <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
     <h2>Minecraft: Modded V1 RELEASE</h2>
     <p>Tutorial how to install Minecraft: Modded V1.</p>
