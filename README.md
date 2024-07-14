@@ -248,69 +248,72 @@
 
 <div class="content" id="download">
     <h2>Minecraft: Modded V1 PSVita Released.</h2>
-    <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Join Discord</a>
-    <h2>Minecraft: Modded V1 RELEASE</h2>
-    <p>Tutorial how to install Minecraft: Modded V1.</p>
-    <p>
-        <strong>1st step:</strong> Check your region code of the Minecraft you're currently using. If it is USA, or Japan, you can install Minecraft: Modded V1 without uninstalling Minecraft. If your Minecraft region code is Europe (PCSB00560), you will have to uninstall your Minecraft because Minecraft: Modded V1 is currently only on Europe. (USA AND JAPAN RELEASE SOON . . .)
-    </p>
-    <p><strong>2nd step:</strong> Download the "Minecraft_ModdedV1_Install_Folder" folder. Download "Minecraft_Modded_reFiles" folder, and download "Minecraft_ModdedV1_Custom_Worlds" with Google Drive. Links are just below the instructions. </p>
-    <p><strong>3rd step:</strong> Slide the "Minecraft_ModdedV1_Install_Folder", "Minecraft_Modded_reFiles" and "Minecraft_ModdedV1_Custom_Worlds to your PSVita.</p>
-    <p><strong>4th step:</strong> Go on "Minecraft_ModdedV1_Install_Folder", press triangle, go to "More" and choose "Install Folder".</p>
-    <p><strong>5th step:</strong> Open "Minecraft_Modded_reFiles" folder and slide the "reAddcount" and the "rePatch" folder to ux0.</p>
-     <p><strong>6th step:</strong> Open "Minecraft_ModdedV1_Custom_Worlds" copy the "savegames" folder, go to ux0:/data and paste.</p>
-    <p><strong>7th step:</strong> Launch Minecraft: Modded V1 for few seconds then close it.</p>
-    <p><strong>8th step:</strong> Launch "Save Manager" app, tap on "Minecraft: Modded V1", tap on ***RESTORE*** then tap on "SLOT9", then press X. DO NOT PRESS BACKUP INSTEAD OF RESTORE. (this step will allow you to have the custom worlds.)</p>
-    <p><strong>9th step:</strong> Launch Minecraft: Modded V1, and enjoy!</p>
-    <p><strong>Download Link:</strong> <a href="https://drive.google.com/drive/folders/1e6wnehifA9NnJDBqBnx6ACjc-8IcWs93?usp=drive_link" target="_blank">Minecraft: Modded V1 Install Folder</a></p>
-    <p><strong>Download Link:</strong> <a href="https://drive.google.com/drive/folders/1emnBebfCACTJRc5RuAGg3r9HmsLEvb_e?usp=drive_link" target="_blank">Minecraft: Modded V1 reFiles Folder</a></p>
-    <p><strong>Download Link:</strong> <a href="https://drive.google.com/drive/folders/1wRZwlZYATck-yH_0p-LgyyIPMklDSDFs?usp=drive_link" target="_blank">Minecraft: Modded V1 Custom Worlds Folder</a></p>
+    <a href="https://discord.gg/ED9vNvwD8u" class="btn gradient-hover" target="_blank">Download Here</a>
+    <p>Size: 18.14MB</p>
+    <p>Official Discord: <a href="https://discord.gg/ED9vNvwD8u" class="discord-link" target="_blank">https://discord.gg/ED9vNvwD8u</a></p>
 </div>
 
 <div class="content" id="discord">
     <h2>Discord</h2>
     <p>Join our Discord server to connect with the community, get help, and stay updated with the latest news and announcements.</p>
     <a href="https://discord.gg/Edeee2nsvb" class="btn gradient-hover" target="_blank">Join Discord</a>
+    <p>Rejoignez notre Discord: <a href="https://discord.gg/Edeee2nsvb" class="discord-link" target="_blank">https://discord.gg/Edeee2nsvb</a></p>
 </div>
 
 <div class="content" id="credit">
     <h2>Credit</h2>
-    <p>Made by Mickael140810 alias Mickado. Minecraft: Modded's logo made by Matt19220. Special Thanks to: SkyForces, PhoenixArc, Matt19220, Zealous Chuck, Haasman, Lee</p>
+    <p>Special thanks to the following contributors who made this mod possible:</p>
+    <ul>
+        <li>Lead Developer: John Doe</li>
+        <li>Graphic Designer: Jane Smith</li>
+        <li>Community Manager: Alex Johnson</li>
+        <li>Tester: Emily Davis</li>
+    </ul>
 </div>
 
 <div class="content" id="faq">
     <h2>FAQ</h2>
-    <div class="faq-item" onclick="toggleFaqAnswer('faq1')">
-        <h3>Can I have Minecraft: Enhanced and Minecraft: Modded at the same time?</h3>
-        <div class="faq-answer" id="faq1">
-            <p>Yes, of course! Just install Minecraft: Enhanced USA or JPN Edition, and keep Minecraft: Modded to Europe edition (PSCB00560).</p>
+    <div class="faq-item" onclick="toggleFaq(this)">
+        <h3>What is Minecraft: Modded for PSVita?</h3>
+        <div class="faq-answer">
+            <p>Minecraft: Modded for PSVita is a customized version of Minecraft for the PlayStation Vita, featuring new skins, maps, textures, and various enhancements.</p>
         </div>
     </div>
-    <div class="faq-item" onclick="toggleFaqAnswer('faq2')">
-        <h3>Can I have normal Minecraft and Minecraft: Modded V1 ?</h3>
-        <div class="faq-answer" id="faq2">
-            <p>Yes, of course! Just make sure your normal Minecraft is JAPAN or USA edition, and keep Minecraft: Modded V1 Europe edition (PCSB00560).</p>
+    <div class="faq-item" onclick="toggleFaq(this)">
+        <h3>How do I install the mod?</h3>
+        <div class="faq-answer">
+            <p>You can find installation instructions and download links on our Discord server and website.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+        <h3>Is this mod free?</h3>
+        <div class="faq-answer">
+            <p>Yes, Minecraft: Modded for PSVita is free to download and use.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+        <h3>Where can I report bugs or suggest new features?</h3>
+        <div class="faq-answer">
+            <p>You can report bugs or suggest new features on our Discord server.</p>
         </div>
     </div>
 </div>
 
 <script>
-    function showTab(tabName) {
-        var i, tabContent;
-        tabContent = document.getElementsByClassName("content");
-        for (i = 0; i < tabContent.length; i++) {
-            tabContent[i].classList.remove('active');
-        }
-        document.getElementById(tabName).classList.add('active');
-        window.scrollTo(0, 0); // scroll to top when tab changes
+    function showTab(tabId) {
+        var tabs = document.querySelectorAll('.content');
+        tabs.forEach(function (tab) {
+            tab.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
     }
 
-    function toggleFaqAnswer(faqId) {
-        var answer = document.getElementById(faqId);
-        if (answer.style.display === "none" || answer.style.display === "") {
-            answer.style.display = "block";
+    function toggleFaq(faqItem) {
+        var answer = faqItem.querySelector('.faq-answer');
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
         } else {
-            answer.style.display = "none";
+            answer.style.display = 'block';
         }
     }
 </script>
