@@ -271,7 +271,9 @@
     <h2>Discord</h2>
     <p>Join our Discord server to connect with the community, get help, and stay updated with the latest news and announcements.</p>
     <a href="https://discord.gg/Edeee2nsvb" class="btn gradient-hover" target="_blank">Join Discord</a>
+    <p>Rejoignez notre Discord: <a href="https://discord.gg/Edeee2nsvb" class="discord-link" target="_blank">https://discord.gg/Edeee2nsvb</a></p>
 </div>
+
 
 <div class="content" id="credit">
     <h2>Credit</h2>
